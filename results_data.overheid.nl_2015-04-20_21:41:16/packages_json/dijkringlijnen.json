@@ -1,0 +1,136 @@
+{
+    "owner_org": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+    "maintainer": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "relationships_as_object": [], 
+    "md_uri": "http://nationaalgeoregister.nl/geonetwork?uuid=f7a34362-27b4-49da-8268-884a774a76be", 
+    "private": false, 
+    "maintainer_email": "Olaf.van.der.Sluis@provincie-utrecht.nl", 
+    "num_tags": 4, 
+    "id": "f909a9ff-f5f1-4bb7-a34e-db4f85605c00", 
+    "metadata_created": "2015-04-18T01:53:23.408633", 
+    "metadata_modified": "2015-04-20T01:44:08.363111", 
+    "author": null, 
+    "author_email": null, 
+    "isopen": true, 
+    "state": "active", 
+    "source": "ngr", 
+    "theme": "http://standaarden.overheid.nl/owms/terms/Water_(verkeer-thema)", 
+    "version": null, 
+    "maintainer_facet": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "md_soortwijziging": ":updated", 
+    "license_id": "publiek-domein", 
+    "contact_point": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "type": "dataset", 
+    "lod_stars": "0", 
+    "resources": [
+        {
+            "resource_group_id": "8b366fb3-d242-49bd-a9c9-afa53cc5619d", 
+            "protocol": "dataset", 
+            "cache_last_updated": null, 
+            "revision_timestamp": "2015-04-20T01:44:08.361373", 
+            "webstore_last_updated": null, 
+            "id": "31142ac8-9472-4447-bc90-e17ff8015a3a", 
+            "size": null, 
+            "state": "active", 
+            "hash": "", 
+            "description": "", 
+            "format": "dataset", 
+            "tracking_summary": {
+                "total": 0, 
+                "recent": 0
+            }, 
+            "mimetype_inner": null, 
+            "url_type": null, 
+            "mimetype": null, 
+            "cache_url": null, 
+            "name": "-", 
+            "created": "2015-04-20T03:44:08.393967", 
+            "url": "http://Server=sde; Service=sde:oracle$sde:oracle11g:geopp; User=verkeer; Version=SDE.DEFAULT", 
+            "webstore_url": null, 
+            "last_modified": null, 
+            "position": 0, 
+            "revision_id": "18e036c4-6d25-4268-aabf-a002888a6144", 
+            "resource_type": null
+        }
+    ], 
+    "num_resources": 1, 
+    "tags": [
+        {
+            "vocabulary_id": null, 
+            "display_name": "Beleid van anderen", 
+            "name": "Beleid van anderen", 
+            "revision_timestamp": "2015-04-18T01:53:23.408633", 
+            "state": "active", 
+            "id": "4665d2b2-30b2-4b74-89c7-1b9cd2b5fd13"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "DIJKEN", 
+            "name": "DIJKEN", 
+            "revision_timestamp": "2015-04-18T01:53:23.408633", 
+            "state": "active", 
+            "id": "50645332-1aed-414d-b46e-50f16cd9b24a"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "OVERSTROMINGEN", 
+            "name": "OVERSTROMINGEN", 
+            "revision_timestamp": "2015-04-18T01:53:23.408633", 
+            "state": "active", 
+            "id": "755fb74c-5ab4-452e-9bc2-a315dad5d8f8"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "WATERLOPEN", 
+            "name": "WATERLOPEN", 
+            "revision_timestamp": "2015-04-18T01:53:23.408633", 
+            "state": "active", 
+            "id": "6f3c1411-907d-4e64-870b-89906bd0e46f"
+        }
+    ], 
+    "theme_facet": "http://standaarden.overheid.nl/owms/terms/Verkeer_(thema)", 
+    "title": "Dijkringlijnen", 
+    "maintainer_displayname": "Provincie | Utrecht", 
+    "theme_displayname": "Verkeer | Water", 
+    "temporal_from": "2009-11-06", 
+    "tracking_summary": {
+        "total": 0, 
+        "recent": 0
+    }, 
+    "groups": [], 
+    "creator_user_id": "53359fa1-154d-4d03-8408-3582c9e0dcbc", 
+    "relationships_as_subject": [], 
+    "revision_timestamp": "2015-04-18T01:53:23.408633", 
+    "identifier": "f7a34362-27b4-49da-8268-884a774a76be", 
+    "name": "dijkringlijnen", 
+    "language": "nl-NL", 
+    "temporal_to": "2015-11-06", 
+    "accrual_periodicity": "http://purl.org/cld/freq/irregular", 
+    "notes": "Dijkringlijnen begrenzen dijkringen. De lijnen vormen de begrenzingen van de dijkringen en vallen daarom vaak samen met de waterkeringen of natuurlijke waterscheidingen.", 
+    "license_title": "Publiek Domein", 
+    "modified": "2009-08-13", 
+    "url": null, 
+    "extras": [
+        {
+            "value": "http://standaarden.overheid.nl/owms/terms/Water_(verkeer-thema)", 
+            "key": "subtheme_facet"
+        }
+    ], 
+    "license_url": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl", 
+    "organization": {
+        "description": "", 
+        "title": "Nationaal Georegister", 
+        "created": "2015-03-26T12:56:19.147623", 
+        "approval_status": "approved", 
+        "revision_timestamp": "2015-03-26T11:56:19.121612", 
+        "is_organization": true, 
+        "state": "active", 
+        "image_url": "20150326-115619.119226ngr.png", 
+        "revision_id": "918c4dfd-7496-4ac4-8b0d-a95fe2682aa9", 
+        "type": "organization", 
+        "id": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+        "name": "nationaal-georegister"
+    }, 
+    "revision_id": "705227cf-01f9-4aa9-97f8-61449214c434", 
+    "landingpage": "https://www.provincie-utrecht.nl/onderwerpen/alle-onderwerpen/mobiliteitsplan2015/"
+}

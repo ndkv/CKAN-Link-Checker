@@ -1,0 +1,128 @@
+{
+    "owner_org": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+    "maintainer": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "relationships_as_object": [], 
+    "md_uri": "http://nationaalgeoregister.nl/geonetwork?uuid=fdb199c8-aad5-4c2d-b284-8dea2f032584", 
+    "private": false, 
+    "maintainer_email": "Olaf.van.der.Sluis@provincie-utrecht.nl", 
+    "num_tags": 3, 
+    "id": "dfac89a7-d11b-4af9-bf74-a8b5b0f4ba2d", 
+    "metadata_created": "2015-04-18T01:53:54.376124", 
+    "metadata_modified": "2015-04-20T01:44:21.291923", 
+    "author": null, 
+    "author_email": null, 
+    "isopen": true, 
+    "state": "active", 
+    "source": "ngr", 
+    "theme": "http://standaarden.overheid.nl/owms/terms/Transport_(thema)", 
+    "version": null, 
+    "maintainer_facet": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "md_soortwijziging": ":updated", 
+    "license_id": "publiek-domein", 
+    "contact_point": "ngr@test.com", 
+    "type": "dataset", 
+    "lod_stars": "0", 
+    "resources": [
+        {
+            "resource_group_id": "6426fd8a-1ad6-46bd-bbbd-cdbdb3177244", 
+            "protocol": "OGC:WMS", 
+            "cache_last_updated": null, 
+            "revision_timestamp": "2015-04-20T01:44:21.291090", 
+            "webstore_last_updated": null, 
+            "id": "aaf03e20-ae17-4ce5-868e-9f36af18a2ec", 
+            "size": null, 
+            "state": "active", 
+            "hash": "", 
+            "description": "", 
+            "format": "ogc:wms", 
+            "tracking_summary": {
+                "total": 0, 
+                "recent": 0
+            }, 
+            "mimetype_inner": null, 
+            "url_type": null, 
+            "mimetype": null, 
+            "cache_url": null, 
+            "name": null, 
+            "created": "2015-04-20T03:44:21.320233", 
+            "url": "http://Server=sde; Service=sde:oracle$sde:oracle11g:geopp; User=verkeer; Version=SDE.DEFAULT", 
+            "webstore_url": null, 
+            "last_modified": null, 
+            "position": 0, 
+            "revision_id": "5fe05161-855e-426b-be24-5a9b25c34fbf", 
+            "resource_type": null
+        }
+    ], 
+    "num_resources": 1, 
+    "tags": [
+        {
+            "vocabulary_id": null, 
+            "display_name": "FIETSPADEN", 
+            "name": "FIETSPADEN", 
+            "revision_timestamp": "2015-04-18T01:53:54.376124", 
+            "state": "active", 
+            "id": "9713da82-85d0-42c9-b8b1-8f8fdc138eba"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "FIETSROUTES", 
+            "name": "FIETSROUTES", 
+            "revision_timestamp": "2015-04-18T01:53:54.376124", 
+            "state": "active", 
+            "id": "3c6afdc0-366f-4550-8d95-9a9fe6a6a6c4"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "VERKEERSMOBILITEIT", 
+            "name": "VERKEERSMOBILITEIT", 
+            "revision_timestamp": "2015-04-18T01:53:54.376124", 
+            "state": "active", 
+            "id": "fe770ed4-9833-45a7-ae1b-3c751d7739cf"
+        }
+    ], 
+    "theme_facet": "http://standaarden.overheid.nl/owms/terms/Economie", 
+    "title": "Interlokale utilitaire hoofdfietsroutes", 
+    "maintainer_displayname": "Provincie | Utrecht", 
+    "theme_displayname": "Economie | Transport", 
+    "temporal_from": "2013-01-18", 
+    "tracking_summary": {
+        "total": 0, 
+        "recent": 0
+    }, 
+    "groups": [], 
+    "creator_user_id": "53359fa1-154d-4d03-8408-3582c9e0dcbc", 
+    "relationships_as_subject": [], 
+    "revision_timestamp": "2015-04-18T01:53:54.376124", 
+    "identifier": "fdb199c8-aad5-4c2d-b284-8dea2f032584", 
+    "name": "interlokale-utilitaire-hoofdfietsroutes", 
+    "language": "nl-NL", 
+    "temporal_to": "2028-01-01", 
+    "accrual_periodicity": "http://purl.org/cld/freq/irregular", 
+    "notes": "Interlokale utilitaire hoofdfietsroutes van en naar woonkernen met meer dan 5000 inwoners.  De fietsroutes zijn ingedeeld in vier categorien:beheer Provincie Utrecht, gemeente, liggend buiten de provincie Utrecht en gewenst.", 
+    "license_title": "Publiek Domein", 
+    "modified": "2014-07-07", 
+    "url": null, 
+    "extras": [
+        {
+            "value": "http://standaarden.overheid.nl/owms/terms/Transport_(thema)", 
+            "key": "subtheme_facet"
+        }
+    ], 
+    "license_url": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl", 
+    "organization": {
+        "description": "", 
+        "title": "Nationaal Georegister", 
+        "created": "2015-03-26T12:56:19.147623", 
+        "approval_status": "approved", 
+        "revision_timestamp": "2015-03-26T11:56:19.121612", 
+        "is_organization": true, 
+        "state": "active", 
+        "image_url": "20150326-115619.119226ngr.png", 
+        "revision_id": "918c4dfd-7496-4ac4-8b0d-a95fe2682aa9", 
+        "type": "organization", 
+        "id": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+        "name": "nationaal-georegister"
+    }, 
+    "revision_id": "81fda069-81db-4237-80af-506c12c3bfc3", 
+    "landingpage": "https://www.provincie-utrecht.nl/onderwerpen/alle-onderwerpen/mobiliteitsplan2015/"
+}

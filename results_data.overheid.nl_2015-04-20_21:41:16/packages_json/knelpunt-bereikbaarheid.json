@@ -1,0 +1,120 @@
+{
+    "owner_org": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+    "maintainer": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "relationships_as_object": [], 
+    "md_uri": "http://nationaalgeoregister.nl/geonetwork?uuid=54fe1d73-c5d7-4cbd-b69a-9b7359be41d7", 
+    "private": false, 
+    "maintainer_email": "saskia.kemperman@provincie-utrecht.nl", 
+    "num_tags": 2, 
+    "id": "676fa664-b497-4673-b470-fb149383abac", 
+    "metadata_created": "2015-04-18T01:53:57.073823", 
+    "metadata_modified": "2015-04-20T01:44:22.863829", 
+    "author": null, 
+    "author_email": null, 
+    "isopen": true, 
+    "state": "active", 
+    "source": "ngr", 
+    "theme": "http://standaarden.overheid.nl/owms/terms/Transport_(thema)", 
+    "version": null, 
+    "maintainer_facet": "http://standaarden.overheid.nl/owms/terms/Utrecht_(provincie)", 
+    "md_soortwijziging": ":updated", 
+    "license_id": "publiek-domein", 
+    "contact_point": "ngr@test.com", 
+    "type": "dataset", 
+    "lod_stars": "0", 
+    "resources": [
+        {
+            "resource_group_id": "2c5ad031-cf09-4e03-8443-bf2ef81772cd", 
+            "protocol": "OGC:WMS", 
+            "cache_last_updated": null, 
+            "revision_timestamp": "2015-04-20T01:44:22.862976", 
+            "webstore_last_updated": null, 
+            "id": "a0a19455-10fb-469b-b4da-b7dbf36dc3bd", 
+            "size": null, 
+            "state": "active", 
+            "hash": "", 
+            "description": "", 
+            "format": "ogc:wms", 
+            "tracking_summary": {
+                "total": 0, 
+                "recent": 0
+            }, 
+            "mimetype_inner": null, 
+            "url_type": null, 
+            "mimetype": null, 
+            "cache_url": null, 
+            "name": null, 
+            "created": "2015-04-20T03:44:22.888836", 
+            "url": "http://Server=sde; Service=sde:oracle$sde:oracle11g:geopp; User=verkeer; Version=SDE.DEFAULT", 
+            "webstore_url": null, 
+            "last_modified": null, 
+            "position": 0, 
+            "revision_id": "8b9ae2f4-5b2b-4e02-be80-59c8bf626172", 
+            "resource_type": null
+        }
+    ], 
+    "num_resources": 1, 
+    "tags": [
+        {
+            "vocabulary_id": null, 
+            "display_name": "BELEIDSUITVOERING", 
+            "name": "BELEIDSUITVOERING", 
+            "revision_timestamp": "2015-04-18T01:53:57.073823", 
+            "state": "active", 
+            "id": "a2daccb2-3e12-441d-8408-9b7f1204837b"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "VERKEERSMOBILITEIT", 
+            "name": "VERKEERSMOBILITEIT", 
+            "revision_timestamp": "2015-04-18T01:53:57.073823", 
+            "state": "active", 
+            "id": "fe770ed4-9833-45a7-ae1b-3c751d7739cf"
+        }
+    ], 
+    "theme_facet": "http://standaarden.overheid.nl/owms/terms/Economie", 
+    "title": "Knelpunt bereikbaarheid", 
+    "maintainer_displayname": "Provincie | Utrecht", 
+    "theme_displayname": "Economie | Transport", 
+    "temporal_from": "2013-01-10", 
+    "tracking_summary": {
+        "total": 0, 
+        "recent": 0
+    }, 
+    "groups": [], 
+    "creator_user_id": "53359fa1-154d-4d03-8408-3582c9e0dcbc", 
+    "relationships_as_subject": [], 
+    "revision_timestamp": "2015-04-18T01:53:57.073823", 
+    "identifier": "54fe1d73-c5d7-4cbd-b69a-9b7359be41d7", 
+    "name": "knelpunt-bereikbaarheid", 
+    "language": "nl-NL", 
+    "temporal_to": "2099-01-01", 
+    "accrual_periodicity": "notPlanned", 
+    "notes": "Een selectie uit het beschikbare wegennet met daaraan toegevoegd een knelpunttype ochtend- en/of avondspits.", 
+    "license_title": "Publiek Domein", 
+    "modified": "2014-07-07", 
+    "url": null, 
+    "extras": [
+        {
+            "value": "http://standaarden.overheid.nl/owms/terms/Transport_(thema)", 
+            "key": "subtheme_facet"
+        }
+    ], 
+    "license_url": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl", 
+    "organization": {
+        "description": "", 
+        "title": "Nationaal Georegister", 
+        "created": "2015-03-26T12:56:19.147623", 
+        "approval_status": "approved", 
+        "revision_timestamp": "2015-03-26T11:56:19.121612", 
+        "is_organization": true, 
+        "state": "active", 
+        "image_url": "20150326-115619.119226ngr.png", 
+        "revision_id": "918c4dfd-7496-4ac4-8b0d-a95fe2682aa9", 
+        "type": "organization", 
+        "id": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+        "name": "nationaal-georegister"
+    }, 
+    "revision_id": "ca281994-ffd6-49b5-84ad-8ed1e47706f4", 
+    "landingpage": "https://www.provincie-utrecht.nl/onderwerpen/alle-onderwerpen/mobiliteitsplan2015/"
+}

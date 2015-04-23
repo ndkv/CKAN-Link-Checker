@@ -208,7 +208,7 @@ with open('packages.csv', 'w') as ALL_OUT:
                     append_csv(
                         'failed_resources.csv',
                         [
-                            package['name'],
+                            resource['name'],
                             #resource['url'],
                             url,
                             '0',
@@ -228,7 +228,7 @@ with open('packages.csv', 'w') as ALL_OUT:
                     append_csv(
                         'failed_resources.csv',
                         [
-                            package['name'],
+                            resource['name'],
                             #resource['url'],
                             url,
                             str(r.status_code),
@@ -251,7 +251,7 @@ with open('packages.csv', 'w') as ALL_OUT:
                     append_csv(
                         'failed_resources.csv',
                         [
-                            package['name'],
+                            resource['name'],
                             resource['url'],
                             '0',
                             str(e)

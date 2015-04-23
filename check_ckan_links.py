@@ -169,7 +169,7 @@ with open('packages.csv', 'w') as ALL_OUT:
             # endpoint isn't hammered that much
             #time.sleep(1)
             url = resource['url']
-            res_format = resource['format']
+            res_format = resource['format'].lower()
 
             parsed_url = urlparse(url)
 
@@ -177,21 +177,22 @@ with open('packages.csv', 'w') as ALL_OUT:
                 # Valid URLs require two parameters, however,
                 # some resources have only one hence we
                 # check whether URL lacks 1 on more parameters
-                if len(parsed_url[3].split('=')) < 2:
-                    if res_format == 'ogc:wms':
-                        ogc_service = 'WMS'
-                    elif res_format == 'ogc:wfs':
-                        ogc_service = 'WFS'
-                    elif res_format == 'ogc:wmts':
-                        ogc_service = 'WMTS'
-                    elif res_format == 'ogc:wcs':
-                        ogc_service = 'WCS'
+                ogc_params = [param.lower() for param in parsed_url[3].split('=')]
+                if 'service' not in ogc_params: print "Warning: this OGC URL lacks a 'service' parameter"
+                if 'request' not in ogc_params: print "Warning: this OGC URL lacks a 'request' parameter"
 
-                    # Construct valid OGC request
-                    url = url.split('?')[0] + '?SERVICE=%s&REQUEST=GetCapabilities' % ogc_service
+                if 'wms' in res_format:
+                    ogc_service = 'WMS'
+                elif 'wfs' in res_format:
+                    ogc_service = 'WFS'
+                elif 'wmts' in res_format:
+                    ogc_service = 'WMTS'
+                elif 'wcs' in res_format:
+                    ogc_service = 'WCS'
+
+                # Construct valid OGC GetCapabilities request
+                url = url.split('?')[0] + '?SERVICE=%s&REQUEST=GetCapabilities' % ogc_service
                 
-            
-
             # Parse HTTP URLs
             if parsed_url[0] == 'http':
                 # Try to download the URL and write relevant data to
@@ -203,7 +204,7 @@ with open('packages.csv', 'w') as ALL_OUT:
                         requests.exceptions.InvalidURL,
                         requests.exceptions.ConnectionError,
                         urllib3.exceptions.LocationParseError) as e:
-                    print str(e) + ' : ' + resource['url']
+                    print str(e) + ' : ' + url
                     append_csv(
                         'failed_resources.csv',
                         [
@@ -221,13 +222,15 @@ with open('packages.csv', 'w') as ALL_OUT:
                 if r.status_code != 200:
                     print 'Got status code %i instead of 200 for: %s' % (
                         r.status_code,
-                        resource['url']
+                        #resource['url']
+                        url
                     )
                     append_csv(
                         'failed_resources.csv',
                         [
                             package['name'],
-                            resource['url'],
+                            #resource['url'],
+                            url,
                             str(r.status_code),
                             r.reason
                         ]

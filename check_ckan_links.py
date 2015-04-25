@@ -165,9 +165,7 @@ with open('packages.csv', 'w') as ALL_OUT:
         for resource in package['resources']:
             # Sleep at least 1 second between requests to avoid
             # hammering the CKAN endpoint too much
-            # ndkv: resources are downloaded from own source hence
-            # endpoint isn't hammered that much
-            #time.sleep(1)
+            time.sleep(0.5)
             url = resource['url']
             res_format = resource['format'].lower()
 
@@ -198,7 +196,7 @@ with open('packages.csv', 'w') as ALL_OUT:
                 # Try to download the URL and write relevant data to
                 # failed_resources.csv if it fails
                 try:
-                    r = session.get(url, timeout=60)
+                    r = session.get(url, timeout=30)
                 except (socket.timeout,
                         requests.exceptions.Timeout,
                         requests.exceptions.InvalidURL,
@@ -208,11 +206,12 @@ with open('packages.csv', 'w') as ALL_OUT:
                     append_csv(
                         'failed_resources.csv',
                         [
-                            resource['name'],
+                            package['name'],
                             #resource['url'],
                             url,
                             '0',
-                            str(e)
+                            str(e),
+                            resource['id']
                         ]
                     )
                     continue
@@ -228,11 +227,12 @@ with open('packages.csv', 'w') as ALL_OUT:
                     append_csv(
                         'failed_resources.csv',
                         [
-                            resource['name'],
+                            package['name'],
                             #resource['url'],
                             url,
                             str(r.status_code),
-                            r.reason
+                            r.reason,
+                            resource['id']
                         ]
                     )
                     continue
@@ -251,10 +251,11 @@ with open('packages.csv', 'w') as ALL_OUT:
                     append_csv(
                         'failed_resources.csv',
                         [
-                            resource['name'],
+                            package['name'],
                             resource['url'],
                             '0',
-                            str(e)
+                            str(e),
+                            resource['id']
                         ]
                     )
                     continue

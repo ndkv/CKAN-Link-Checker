@@ -1,0 +1,129 @@
+{
+    "license_title": "Publiek Domein", 
+    "maintainer": "http://standaarden.overheid.nl/owms/terms/Koninklijk_Nederlands_Meteorologisch_Instituut", 
+    "relationships_as_object": [], 
+    "lod_stars": "0", 
+    "private": false, 
+    "maintainer_email": "datacentrum@knmi.nl", 
+    "num_tags": 3, 
+    "modified": "2014-07-01", 
+    "id": "7504c211-4d98-4654-a04e-6601d4be04ee", 
+    "metadata_created": "2015-03-26T13:22:10.668686", 
+    "metadata_modified": "2015-04-24T01:59:18.300125", 
+    "author": null, 
+    "author_email": null, 
+    "state": "active", 
+    "source": "ngr", 
+    "theme": "http://standaarden.overheid.nl/owms/terms/Lucht", 
+    "version": null, 
+    "md_soortwijziging": ":updated", 
+    "spatial": "", 
+    "license_id": "publiek-domein", 
+    "contact_point": "http://standaarden.overheid.nl/owms/terms/Koninklijk_Nederlands_Meteorologisch_Instituut", 
+    "type": "dataset", 
+    "md_uri": "http://nationaalgeoregister.nl/geonetwork?uuid=8cc6d2d9-f99e-4e9c-a1c6-44f6cc5cdafd", 
+    "resources": [
+        {
+            "resource_group_id": "1ac20551-301e-468b-b424-3d15b526f8f1", 
+            "protocol": "download", 
+            "cache_last_updated": null, 
+            "revision_timestamp": "2015-04-24T01:59:18.298960", 
+            "webstore_last_updated": null, 
+            "id": "900b1f78-74ab-4d81-87b1-1312117e1646", 
+            "size": null, 
+            "state": "active", 
+            "hash": "", 
+            "description": "", 
+            "format": "download", 
+            "tracking_summary": {
+                "total": 0, 
+                "recent": 0
+            }, 
+            "last_modified": null, 
+            "url_type": null, 
+            "mimetype": null, 
+            "cache_url": null, 
+            "name": "KDC_download_service", 
+            "created": "2015-04-24T03:59:18.350279", 
+            "url": "ftp://data.knmi.nl/download/EV85WL/014", 
+            "webstore_url": null, 
+            "mimetype_inner": null, 
+            "position": 0, 
+            "revision_id": "958c5e09-fefa-4a10-8274-45829f9a1f5e", 
+            "resource_type": null
+        }
+    ], 
+    "num_resources": 1, 
+    "tags": [
+        {
+            "vocabulary_id": null, 
+            "display_name": "Makkink", 
+            "name": "Makkink", 
+            "revision_timestamp": "2015-03-26T13:22:10.668686", 
+            "state": "active", 
+            "id": "8280e40a-fb42-4737-be85-087cbf38bfa3"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "climate", 
+            "name": "climate", 
+            "revision_timestamp": "2015-03-26T13:22:10.668686", 
+            "state": "active", 
+            "id": "f69f962b-61d1-47b9-b1b7-2ec589dbb64b"
+        }, 
+        {
+            "vocabulary_id": null, 
+            "display_name": "evaporation", 
+            "name": "evaporation", 
+            "revision_timestamp": "2015-03-26T13:22:10.668686", 
+            "state": "active", 
+            "id": "3e83a8d7-0a4f-41f7-8f5f-f12334c87632"
+        }
+    ], 
+    "theme_facet": "http://standaarden.overheid.nl/owms/terms/Natuur_en_milieu", 
+    "maintainer_displayname": "Ministerie van Infrastructuur en Milieu | Koninklijk Nederlands Meteorologisch Instituut", 
+    "theme_displayname": "Natuur en milieu | Lucht", 
+    "landingpage": "http://www.knmi.nl/bibliotheek/knmipubTR/TR346.pdf", 
+    "temporal_from": "2070-01-01", 
+    "language": "en-UK", 
+    "tracking_summary": {
+        "total": 0, 
+        "recent": 0
+    }, 
+    "groups": [], 
+    "creator_user_id": "53359fa1-154d-4d03-8408-3582c9e0dcbc", 
+    "relationships_as_subject": [], 
+    "revision_timestamp": "2015-03-26T13:22:10.668686", 
+    "organization": {
+        "description": "", 
+        "created": "2015-03-26T12:56:19.147623", 
+        "title": "Nationaal Georegister", 
+        "name": "nationaal-georegister", 
+        "revision_timestamp": "2015-03-26T11:56:19.121612", 
+        "is_organization": true, 
+        "state": "active", 
+        "image_url": "20150326-115619.119226ngr.png", 
+        "revision_id": "918c4dfd-7496-4ac4-8b0d-a95fe2682aa9", 
+        "type": "organization", 
+        "id": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+        "approval_status": "approved"
+    }, 
+    "name": "knmi14-daily-makkink-evaporation-2085-wl", 
+    "isopen": true, 
+    "temporal_to": "2099-12-31", 
+    "accrual_periodicity": "http://purl.org/cld/freq/irregular", 
+    "notes": "KNMI14 daily scenario data: 2085 WL.\nGridded files of daily Makkink evaporation in the Netherlands. Based on 14 automatic weather stations.", 
+    "owner_org": "a9a8e392-9f69-493e-8b44-4a1586725a66", 
+    "maintainer_facet": "http://standaarden.overheid.nl/owms/terms/Koninklijk_Nederlands_Meteorologisch_Instituut", 
+    "url": null, 
+    "extras": [
+        {
+            "key": "subtheme_facet", 
+            "value": "http://standaarden.overheid.nl/owms/terms/Lucht"
+        }
+    ], 
+    "license_url": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl", 
+    "title": "KNMI14 Daily Makkink evaporation 2085 WL", 
+    "revision_id": "4c8ab9a4-b20d-43cf-9fb1-692f9f1e74ba", 
+    "identifier": "8cc6d2d9-f99e-4e9c-a1c6-44f6cc5cdafd"
+}

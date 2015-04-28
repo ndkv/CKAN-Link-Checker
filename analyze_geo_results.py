@@ -14,7 +14,7 @@ with open(os.getcwd() + '/failed_resources.csv') as failed_f:
 		url = res[1]
 		id = res[-1].rstrip()
 		reason = res[-2]
-		code = res[-3]
+		code = res[-3].rstrip('"')
 			
 		failed_resources.append({ 'url': url, 'id': id, 'reason': reason, 'code': code })
 
@@ -56,7 +56,7 @@ for file in os.listdir(os.getcwd() + '/packages_json'):
 
 print total_geo, total_failed_geo
 
-with open('failed_geo_resources.csv', 'w') as f_out:
+with open('failed_geo_resources.tsv', 'w') as f_out:
 	writer = csv.writer(f_out, delimiter='\t', quotechar="'")
 
 	for failed_geo_resource in failed_geo_resources:

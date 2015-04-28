@@ -29,7 +29,7 @@ for file in os.listdir(os.getcwd() + '/packages_json'):
 			# Some packages do not have a metadata URI, we assume these 
 			# are stored in data.overheid.nl and not in Nationaal GeoRegister
 			# and do not include them in analysis
-			metadata_uri = None
+			metadata_uri = ''
 
 		if 'nationaalgeoregister' in metadata_uri:
 			for resource in package['resources']:
@@ -57,7 +57,7 @@ for file in os.listdir(os.getcwd() + '/packages_json'):
 print total_geo, total_failed_geo
 
 with open('failed_geo_resources.csv', 'w') as f_out:
-	writer = csv.writer(f_out, delimiter=',', quotechar="'")
+	writer = csv.writer(f_out, delimiter='\t', quotechar="'")
 
 	for failed_geo_resource in failed_geo_resources:
 		writer.writerow(failed_geo_resource)

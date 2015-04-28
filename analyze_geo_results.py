@@ -7,20 +7,20 @@ total_failed_geo = 0
 failed_resources = []
 failed_geo_resources = []
 
-with open(os.getcwd() + '/failed_resources.csv') as f:
-	# Collect failed URLs in a list
-	for resource in f:
-		try:
-			res = resource.split(',')
-			failed_url = unicode(res[1])
-			failed_id = unicode(res[-1].rstrip())
-			failed_resources.append({ 'url': failed_url, 'id': failed_id })
-		except:
-			print "Warning: cannot encode %s in Unicode" % resource.split(',')[1] 
+with open(os.getcwd() + '/failed_resources.csv') as failed_f:
+	for resource in failed_f:
+		res = resource.split(',')
+			
+		url = res[1]
+		id = res[-1].rstrip()
+		reason = res[-2]
+		code = res[-3]
+			
+		failed_resources.append({ 'url': url, 'id': id, 'reason': reason, 'code': code })
 
 for file in os.listdir(os.getcwd() + '/packages_json'):
 	with open('packages_json/' + file) as package_f:
-		# Open a package definition file
+		# Parse package JSON file
 		package = load(package_f)
 		try:
 			# Retrieve metadata URI 
@@ -29,7 +29,7 @@ for file in os.listdir(os.getcwd() + '/packages_json'):
 			# Some packages do not have a metadata URI, we assume these 
 			# are stored in data.overheid.nl and not in Nationaal GeoRegister
 			# and do not include them in analysis
-			metadata_uri = ''
+			metadata_uri = None
 
 		if 'nationaalgeoregister' in metadata_uri:
 			for resource in package['resources']:
@@ -47,11 +47,11 @@ for file in os.listdir(os.getcwd() + '/packages_json'):
 
 
 				#for failed_url in failed_urls:
-				for failed_resource in failed_resources:
-					if resource['id'] == failed_resource['id']:
+				for f_res in failed_resources:
+					if resource['id'] == f_res['id']:
 						total_failed_geo += 1
-						failed_geo_resources.append([resource['name'], resource['protocol'], failed_resource['url'], failed_resource['id']])
-						failed_resources.remove(failed_resource)
+						failed_geo_resources.append([resource['name'], resource['protocol'], f_res['url'], f_res['id'], f_res['code'], f_res['reason']])
+						failed_resources.remove(f_res)
 						break
 
 print total_geo, total_failed_geo
